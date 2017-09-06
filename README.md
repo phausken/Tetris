@@ -10,6 +10,8 @@ It will be implemented using JavaScript and HTML5 Canvas API.
 
 ## Wireframes
 
+[Main screen](https://github.com/phausken/Tetris/blob/master/wireframes/Tetris%20Wireframe.png)
+
 ## Implementation
 
 ### Phase 1
