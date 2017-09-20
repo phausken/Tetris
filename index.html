@@ -4,32 +4,47 @@
     <meta charset="utf-8">
     <title>Tetris</title>
     <link rel="stylesheet" href="./stylesheets/tetris.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
   <script src="https://use.fontawesome.com/74943d5e6d.js"></script>
   </head>
-  <body>
-    <div class="scoreboard">
-      <p>Score:</p>
-      <p id="score">0</p>
-      <p>Lines Cleared:</p>
-      <p id="lines">0</p>
-      <p>Level:</p>
-      <p id="level">1</p>
-    </div>
-    <div class="center">
-      <h1>Tetris</h1>
-    <canvas id="canvas" class="board" width="300" height="300"></canvas>
-  </div>
-  <div id="restart-menu" class="restart-menu" style="display:none">
-    <p>Game Over</p>
-    <button id="button">Try Again?</button>
-  </div>
-  <div class="right-div">
-    <a href="https://github.com/phausken/Tetris">
-      <p>GitHub</p>
-      <i class="fa fa-github" aria-hidden="true"></i></a>
-      <p>Portfolio Site</p>
-      <p>Next Piece:</p>
-      <canvas id="preview" class="preview"></canvas>
+  <body id="body">
+    <div class="screen">
+      <div class="scoreboard">
+        <p class="headline">High Score:</p>
+        <p class="info" id="hiscore">0</p>
+        <p class="headline">Score:</p>
+        <p class="info" id="score">0</p>
+        <p class="headline">Lines Cleared:</p>
+        <p class="info" id="lines">0</p>
+        <p class="headline">Level:</p>
+        <p class="info" id="level">1</p>
+        <p class="headline">Next Piece:</p>
+        <canvas id="preview" class="preview"></canvas>
+      </div>
+
+      <div class="center">
+        <div id="restart-menu" class="restart-menu" style="display:none">
+          <p>Game Over</p>
+          <button id="button">PLAY AGAIN</button>
+        </div>
+        <h1>tetris</h1>
+      <canvas id="canvas" class="board" width="300" height="300"></canvas>
+      </div>
+      <div class="right-div">
+        <div class="instructions">
+          <p>how to play</p>
+          <p>press "s" to start</p>
+          <p>use left / right arrows to move<p>
+          <p>down arrow to fall faster</p>
+          <p>up arrow to rotate</p>
+        </div>
+        <div class="links">
+          <a href="https://github.com/phausken/Tetris">
+          Github Repo</a>
+          <a href="https://phausken.github.io/Portfolio/">
+          Other Projects</a>
+        </div>
+      </div>
   </div>
     <script type="text/javascript" src="lib/board.js">
 
