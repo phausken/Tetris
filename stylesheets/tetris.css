@@ -13,12 +13,13 @@ h1{
   font-size: 48px ;
   margin-top: 5px;
   margin-bottom: 8px;
+  animation-name: fadeInTitle;
+  animation-duration: 5s;
 }
 
-
-
-.scoreboard > p {
-
+@keyframes fadeInTitle {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 .headline{
@@ -47,6 +48,17 @@ h1{
 .board{
   border: 6px black solid;
   }
+
+p {
+  animation-name: fadeInText;
+  animation-duration: 8s;
+}
+
+@keyframes fadeInText {
+  from {opacity: 0;}
+  50% { opacity: 0; }
+  to {opacity: 1;}
+}
 
 body {
   display: flex;
